@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina2">
+
+    <section id="hero2">
+        <div class="container">
+
+            <img src="fondo1.jpg" alt="" id="imagen2">
+            <p class="frase1">Me encantas</p>
+            <p class="frase2">Me gustas</p>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <h3>¿Te gustaría ser mi novia?</h3>
+            <button id="btn1" class="boton2" onclick="mostrarAlerta()" >SI</button>
+            <button class="boton3">NO</button>
+
+        </div>
+    </section>
+       
+    <script>
+
+        function mostrarAlerta()
+        {
+            Swal.fire(
+                '​❤️​',
+                '¡Sabía que dirías que si, yuppii!',
+                'success'
+            );
+        }
+
+        let boton_no = document.getElementsByClassName('boton3')[0];
+    
+        boton_no.onmouseover = () => {
+            boton_no.style.position = "absolute";
+            boton_no.style.left = Math.random()*300 + 'px';
+            boton_no.style.top = Math.random()*600 + 'px';
+        }
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
